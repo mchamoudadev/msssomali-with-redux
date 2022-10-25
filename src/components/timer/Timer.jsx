@@ -5,13 +5,14 @@ import Time from "./Time";
 
 function Timer() {
 	// Random component
-	const Completionist = () => <span>You are good to go!</span>;
+	const Completion = () => <span>You are good to go!</span>;
 
 	// Renderer callback with condition
 	const renderer = ({ days, hours, minutes, seconds, completed }) => {
 		if (completed) {
 			// Render a completed state
-			return <Completionist />;
+
+			return <Completion />;
 		} else {
 			// Render a countdown
 			return (

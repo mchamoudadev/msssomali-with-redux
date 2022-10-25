@@ -6,8 +6,6 @@ import { useSelector } from "react-redux";
 function Competitors() {
 	const { competitors } = useSelector((store) => store.competitor);
 
-	console.log(competitors);
-
 	return (
 		<div className={styles.competitors_container}>
 			<div className={styles.competitors_header}>
